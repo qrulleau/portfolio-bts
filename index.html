@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/main.scss" />
+    <link rel="stylesheet" href="style/main.css" />
     <title>Document</title>
   </head>
   <body>
@@ -12,27 +12,134 @@
       <div class="d-flex">
         <div><h1>quentinRulleau</h1></div>
         <nav>
-          <ul>
-            <li><a href="#home">01 Home</a></li>
-            <li><a href="">02 Work</a></li>
-            <li><a href="">03 Experience</a></li>
-            <li><a href="">04 About</a></li>
-            <li><a href="">05 Contact</a></li>
-            <li><a class="resume" href="">Resume</a></li>
+          <ul class="d-flex">
+            <li>
+              <a href="#home"><span class="blue"> 01</span> Home</a>
+            </li>
+            <li>
+              <a href=""><span class="blue"> 02 </span>Work</a>
+            </li>
+            <li>
+              <a href=""><span class="blue"> 03 </span>Experience</a>
+            </li>
+            <li>
+              <a href=""><span class="blue"> 04 </span>About</a>
+            </li>
+            <li>
+              <a href=""><span class="blue"> 05 </span>Contact</a>
+            </li>
+            <li><button class="button" href="">Resume</button></li>
           </ul>
         </nav>
       </div>
     </header>
     <div class="container">
       <section id="home">
-        <p></p>
+        <p class="blue">Hi my name is</p>
         <h2>Quentin Rulleau <br /><span>i build thing for the web</span></h2>
-        <p></p>
+        <p>
+          I’m a web developer specializing in front end development. Making
+          beautiful design and animated interface. Currently, i’m studing at
+          St-Vincent looking for an internship for the end of school year
+        </p>
+        <button class="button">Checkout my work !</button>
       </section>
-      <section id="work"></section>
-      <section id="experience"></section>
-      <section id="about"></section>
-      <section id="contact"></section>
+      <section id="work">
+        <div class="d-flex">
+          <h3><span class="blue">02.</span> Some things i've built</h3>
+          <span class="line"></span>
+        </div>
+        <section></section>
+        <section>
+          <h5 class="text-center">Other noteworthy Projects</h5>
+          <p class="text-center">View the archive</p>
+          <div class="d-flex">
+            <div class="card">
+              <div class="d-flex"><i></i><i></i></div>
+              <h6>Integration Algolia Search with Wordpress Multisite</h6>
+              <p>
+                Building a custom multisite compatible WordPress plugin to build
+                global search with Algolia
+              </p>
+              <div class="d-flex">
+                <p class="language">Algolia</p>
+                <p class="language">Wordpress</p>
+                <p class="language">PHP</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="d-flex"><i></i><i></i></div>
+              <h6>Integration Algolia Search with Wordpress Multisite</h6>
+              <p>
+                Building a custom multisite compatible WordPress plugin to build
+                global search with Algolia
+              </p>
+              <div class="d-flex">
+                <p class="language">Algolia</p>
+                <p class="language">Wordpress</p>
+                <p class="language">PHP</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="d-flex"><i></i><i></i></div>
+              <h6>Integration Algolia Search with Wordpress Multisite</h6>
+              <p>
+                Building a custom multisite compatible WordPress plugin to build
+                global search with Algolia
+              </p>
+              <div class="d-flex">
+                <p class="language">Algolia</p>
+                <p class="language">Wordpress</p>
+                <p class="language">PHP</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section id="experience">
+        <div class="d-flex">
+          <h3><span class="blue">03.</span> Experience</h3>
+          <span class="line"></span>
+        </div>
+      </section>
+      <section id="about">
+        <div class="d-flex flex-start">
+          <h3><span class="blue">04.</span> About me</h3>
+          <span class="line"></span>
+        </div>
+        <div class="d-flex">
+          <div>
+            <p></p>
+            <p></p>
+            <p></p>
+            <div class="d-flex">
+              <ul>
+                <li>JavaScript (ES6+)</li>
+                <li>Vue</li>
+                <li>TypeScript</li>
+              </ul>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Next.Js</li>
+              </ul>
+            </div>
+          </div>
+          <div><img src="" alt="" /></div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="d-flex flex-center">
+          <h3><span class="blue">05.</span> What's next ?</h3>
+          <span class="line"></span>
+        </div>
+        <h4>Get in Touch</h4>
+        <p></p>
+        <button class="button">say hello</button>
+      </section>
     </div>
+    <footer>
+      <p class="text-center">Build by Quentin Rulleau @2021</p>
+    </footer>
   </body>
 </html>
