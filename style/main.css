@@ -246,7 +246,7 @@ a.link::after {
 	height: 1px;
 	position: relative;
 	bottom: 0.37em;
-	background-color: #64ffda;
+	background-color: #545c5a;
 	transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 	opacity: 0.5;
 }
@@ -263,7 +263,7 @@ nav ul li:last-child {
 	background-color: #0e2c3e;
 	padding: 32px 28px;
 }
-.card:nth-child(2) {
+.card:nth-child(2n) {
 	margin: 0 16px;
 }
 .card h6 {
@@ -625,4 +625,8 @@ h1 span {
 }
 .display {
 	display: flex !important;
+}
+.glider-next,
+.glider-prev {
+	display: none !important;
 }
