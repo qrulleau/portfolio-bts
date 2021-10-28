@@ -25,6 +25,7 @@ buttonSelector.forEach((btn) => {
     activeElement.classList.remove('active-education');
     console.log(btn);
     console.log(activeElement.value);
+    console.log(querySelector(activeElement.value));
     btn.classList.add('active-education');
   });
 });
