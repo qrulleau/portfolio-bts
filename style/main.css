@@ -210,7 +210,7 @@ h3 {
 	color: #ccd6f6;
 }
 .light-grey {
-	color: #a8b2d1;
+	color: #a8b2d1 !important;
 }
 .grey {
 	color: #8892b0;
@@ -243,10 +243,10 @@ a.link::after {
 	content: '';
 	display: block;
 	width: 0px;
-	height: 1px;
+	height: 1.5px;
 	position: relative;
-	bottom: 0.37em;
-	background-color: #545c5a;
+	bottom: 0.25em;
+	background-color: #64ffda;
 	transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 	opacity: 0.5;
 }
@@ -262,6 +262,11 @@ nav ul li:last-child {
 .card {
 	background-color: #0e2c3e;
 	padding: 32px 28px;
+	border-radius: 6px;
+}
+.card:hover h6 {
+	color: #64ffda;
+	transition: 400ms;
 }
 .card:nth-child(2n) {
 	margin: 0 16px;
@@ -333,6 +338,7 @@ h2 {
 .fixed-element {
 	position: fixed;
 	left: auto;
+	z-index: 60;
 }
 .mailto {
 	bottom: 0px;
@@ -350,19 +356,26 @@ h2 {
 .column .line {
 	width: 1px;
 	height: 90px;
-	margin-top: 30px;
+	margin-top: 20px;
 }
 .mailto a {
 	writing-mode: vertical-rl;
+	padding: 10px;
 }
 .fixed-element .fab {
 	font-size: 20px;
-	margin-bottom: 20px;
 }
 .fixed-element .fa-github {
 	margin-bottom: 0;
 }
-
+.fixed-element .icon:hover,
+a.mailto:hover {
+	transform: translateY(-5px);
+	transition: 300ms;
+}
+.fixed-element .icon {
+	padding: 10px;
+}
 h3 {
 	font-size: 32px;
 	font-weight: 600;
@@ -507,11 +520,12 @@ h3 span {
 	bottom: 0;
 	right: 0;
 	top: 0;
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.6);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: #ccd6f6;
+	z-index: 60;
 }
 .content {
 	background-color: #0e2431;
@@ -589,6 +603,7 @@ textarea {
 	padding: 25px;
 	font-size: 18px;
 	line-height: 23.4px;
+	border-radius: 6px;
 }
 .description-project .flex-end,
 .description-project .flex-start {
@@ -629,4 +644,14 @@ h1 span {
 .glider-next,
 .glider-prev {
 	display: none !important;
+}
+@media screen and (max-width: 1790px) {
+	header {
+		width: calc(100% - 30px);
+	}
+}
+@media screen and (max-width: 1160px) {
+	.fixed-element {
+		display: none;
+	}
 }
