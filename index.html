@@ -6,13 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style/main.css" />
   <link rel="stylesheet" href="style/glider.min.css">
+  <link href="style/hamburgers.css" rel="stylesheet">
   <title>Quentin Rulleau Portfolio</title>
 </head>
 <body>
   <header>
     <div class="d-flex">
       <h1 class="sf">Quentin<span>Rulleau</span></h1>
-      <nav class="d-flex">
+      <button class="hamburger hamburger--spring" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <nav>
         <ul class="d-flex">
           <li>
             <a class="sf regular" href="#home"
@@ -39,7 +45,7 @@
             ><span class="blue">05.</span> Contact</a
             >
           </li>
-          <li><a class="button" href="/developpeur-front-end.pdf">Resume</a></li>
+          <li><a class="button" target="_blank" href="/developpeur-front-end.pdf">Resume</a></li>
         </ul>
       </nav>
     </div>
@@ -58,7 +64,7 @@
         <a class="blue link" href="#">St-Vincent</a> looking for an internship
         for the end of school year
       </p>
-      <button class="button" >Checkout my work !</button>
+      <a class="button" href="#work">Checkout my work !</a>
     </section>
     <section id="work">
       <div class="d-flex flex-start">
@@ -378,7 +384,7 @@
         </div>
       </div>
       <div class="education thin-container">
-        <h3 class="text-center">my education</h3>
+        <h3 class="text-center">My education</h3>
         <div class="d-flex align-start">
           <div class="d-flex column">
             <button class="education-choice active-education" value="secondè_BTEC">BTEC</button>

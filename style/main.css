@@ -226,6 +226,9 @@ h3 {
 #home .button {
 	font-size: 14px;
 }
+#home p.grey {
+	margin-bottom: 72px;
+}
 .button:hover {
 	background-color: rgba(100, 255, 218, 0.1);
 	transition: 400ms;
@@ -653,5 +656,45 @@ h1 span {
 @media screen and (max-width: 1160px) {
 	.fixed-element {
 		display: none;
+	}
+}
+@media screen and (min-width: 900px) {
+	nav {
+		display: block;
+	}
+	button.hamburger {
+		display: none;
+	}
+}
+@media screen and (max-width: 900px) {
+	nav {
+		display: none;
+	}
+	button.hamburger {
+		display: block;
+	}
+	.display-nav {
+		display: block;
+	}
+	.display-nav .d-flex {
+		flex-direction: column;
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		top: 0;
+		background-color: black;
+		justify-content: center;
+	}
+	.display-nav .d-flex li {
+		margin: 0 0 48px 0;
+	}
+	.display-nav .d-flex li:last-child {
+		margin-top: 20px;
+	}
+	.is-active {
+		position: fixed;
+		right: 20px;
+		z-index: 60;
 	}
 }

@@ -5,6 +5,14 @@ const closeModal = document.querySelector('.fa-times-circle');
 const buttonSelectorEducation = document.querySelectorAll('.education-choice');
 const buttonSelectorExperience = document.querySelectorAll('.sf');
 
+const buttonDisplayNavMobile = document.querySelector('.hamburger');
+const navigationMobile = document.querySelector('nav');
+
+buttonDisplayNavMobile.addEventListener('click', function () {
+	buttonDisplayNavMobile.classList.toggle('is-active');
+	navigationMobile.classList.toggle('display-nav');
+});
+
 buttonModal.addEventListener('click', function () {
 	modal.classList.add('display');
 });
