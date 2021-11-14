@@ -3,7 +3,7 @@ const modal = document.querySelector('.modal');
 const closeModal = document.querySelector('.fa-times-circle');
 
 const buttonSelectorEducation = document.querySelectorAll('.education-choice');
-const buttonSelectorExperience = document.querySelectorAll('.sf');
+const buttonSelectorExperience = document.querySelectorAll('.business');
 
 const buttonDisplayNavMobile = document.querySelector('.hamburger');
 const navigationMobile = document.querySelector('nav');
@@ -29,13 +29,13 @@ buttonSelectorEducation.forEach((btn) => {
 		btn.classList.add('active-education');
 
 		contents.forEach((content) => {
-			content.classList.remove('active');
+			content.classList.remove('active-tab');
 		});
 
 		const value = btn.value;
 		const DisplayContent = document.getElementById(value);
 
-		DisplayContent.classList.add('active');
+		DisplayContent.classList.add('active-tab');
 	});
 });
 
@@ -48,13 +48,13 @@ buttonSelectorExperience.forEach((btn) => {
 		btn.classList.add('active-experience');
 
 		contents.forEach((content) => {
-			content.classList.remove('active');
+			content.classList.remove('active-tab');
 		});
 
 		const value = btn.value;
 		const DisplayContent = document.getElementById(value);
 
-		DisplayContent.classList.add('active');
+		DisplayContent.classList.add('active-tab');
 	});
 });
 

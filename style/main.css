@@ -197,6 +197,18 @@ a:hover {
 	color: #64ffda;
 	transition: 450ms;
 }
+.mb-100 {
+	margin-bottom: 100px;
+}
+.mt-100 {
+	margin-top: 100px;
+}
+.pb-100 {
+	padding-bottom: 100px;
+}
+.pt-100 {
+	padding-top: 100px;
+}
 h3 {
 	color: #ccd6f6;
 }
@@ -266,6 +278,10 @@ nav ul li:last-child {
 	background-color: #0e2c3e;
 	padding: 32px 28px;
 	border-radius: 6px;
+	box-shadow: 0 20px 30px -15px rgba(2, 12, 27, 0.7);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between !important;
 }
 .card:hover h6 {
 	color: #64ffda;
@@ -313,7 +329,8 @@ section {
 	margin-top: 100px;
 }
 section:last-child {
-	margin-bottom: 125px;
+	margin-bottom: 200px;
+	padding-top: 100px;
 }
 section:first-child {
 	margin-bottom: 400px;
@@ -413,8 +430,11 @@ h3 span {
 	border-left: 1px solid #64ffda;
 	color: #64ffda;
 }
-.active {
+.active-tab {
 	display: block !important;
+}
+.active {
+	display: flex !important;
 }
 .profil-picture {
 	margin: 20px 0 0 109px;
@@ -607,6 +627,7 @@ textarea {
 	font-size: 18px;
 	line-height: 23.4px;
 	border-radius: 6px;
+	box-shadow: 0 20px 30px -15px rgba(2, 12, 27, 0.7);
 }
 .description-project .flex-end,
 .description-project .flex-start {
@@ -658,6 +679,11 @@ h1 span {
 		display: none;
 	}
 }
+@media screen and (max-width: 1030px) {
+	.container {
+		width: calc(100% - 30px);
+	}
+}
 @media screen and (min-width: 900px) {
 	nav {
 		display: block;
@@ -696,5 +722,10 @@ h1 span {
 		position: fixed;
 		right: 20px;
 		z-index: 60;
+	}
+}
+@media screen and (max-width: 620px) {
+	#home p.grey {
+		width: inherit;
 	}
 }
