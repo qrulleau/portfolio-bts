@@ -600,6 +600,9 @@ textarea {
 .fa-caret-right {
   font-size: 24px;
 }
+form {
+  margin-top: 20px;
+}
 .grid {
   display: grid;
   gap: 10px;
@@ -698,7 +701,10 @@ textarea {
 .description-project .flex-start .language {
   font-size: 13px;
 }
-.left .description-project .flex-end i {
+.left .description-project .flex-start a {
+  height: 19px;
+}
+.left .description-project .flex-start a:first-child {
   margin-right: 12px;
 }
 .left .description-project .fa-github {
@@ -742,6 +748,11 @@ h1 span {
     width: calc(100% - 30px);
   }
 }
+@media screen and (max-width: 930px) {
+  .small-container {
+    width: calc(100% - 30px);
+  }
+}
 @media screen and (min-width: 900px) {
   nav {
     display: block;
@@ -782,6 +793,11 @@ h1 span {
     z-index: 60;
   }
 }
+@media screen and (max-width: 780px) {
+  .content {
+    width: calc(100% - 30px);
+  }
+}
 @media screen and (max-width: 730px) {
   .thin-container {
     width: calc(100% - 30px);
@@ -793,14 +809,51 @@ h1 span {
   .bloc .column {
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .bloc .column .business,
+  .bloc .column .active-experience {
+    border: 1px solid #64ffda !important;
+    margin-right: 15px;
+  }
+  .bloc .column .business {
+    width: inherit !important;
+  }
+  .bloc .column .business:last-child {
+    margin-right: inherit;
   }
   .job,
   .compagny {
     padding-left: 0;
   }
 }
+@media screen and (max-width: 700px) {
+  #about .align-start {
+    flex-direction: column;
+  }
+  .profil-picture {
+    margin: 20px auto 109px auto;
+  }
+}
 @media screen and (max-width: 620px) {
   #home p.grey {
     width: inherit;
+  }
+}
+@media screen and (max-width: 610px) {
+  .bloc .column {
+    height: 110px;
+    align-content: space-between;
+  }
+}
+@media screen and (max-width: 600px) {
+  .extra-small-container {
+    width: calc(100% - 30px);
+  }
+}
+@media screen and (max-width: 497px) {
+  .bloc .column .business,
+  .bloc .column .active-experience {
+    margin-right: 0px !important;
   }
 }
