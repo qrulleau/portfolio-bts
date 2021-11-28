@@ -781,6 +781,53 @@ h1 span {
   .container {
     width: calc(100% - 30px);
   }
+  .left .img-project,
+  .right .img-project {
+    grid-column: 1 / -1;
+    height: 100%;
+    opacity: 0.25;
+  }
+  .left .description-project,
+  .right .description-project {
+    display: flex;
+    flex-direction: column;
+    -moz-box-pack: center;
+    justify-content: center;
+    height: 100%;
+    grid-column: 1 / -1;
+    padding: 30px 30px;
+    z-index: 5;
+  }
+  .right .sf {
+    margin: 0 20px 0 0 !important;
+  }
+  .right .flex-end,
+  .left .flex-start {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    height: 45px;
+  }
+  .right .description-project {
+    text-align: left;
+  }
+  .background-blue {
+    width: 100%;
+    height: 100%;
+  }
+  .background-blue img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .background-blue::before {
+    background-color: #03c2fd;
+  }
+  .description-project .text-description {
+    background-color: inherit;
+    box-shadow: inherit;
+    padding: 0;
+    text-align: left;
+  }
 }
 @media screen and (max-width: 930px) {
   .small-container {
