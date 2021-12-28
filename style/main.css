@@ -1,3 +1,4 @@
+/* reset css eric meyer */
 html,
 body,
 div,
@@ -131,6 +132,8 @@ body {
   background-color: #091c27;
   color: white;
 }
+
+/*for using custom font  */
 @font-face {
   font-family: 'SF Mono';
   src: url('/font/SFMonoBold.otf') format('truetype');
@@ -173,12 +176,8 @@ body {
   font-weight: 600;
   font-style: normal;
 }
-span.line {
-  width: 300px;
-  height: 1px;
-  display: block;
-  background-color: #233554;
-}
+
+/* global css */
 .d-flex {
   display: flex;
   justify-content: space-between;
@@ -255,6 +254,7 @@ h3 {
   border-radius: 5px;
   font-size: 13px;
 }
+/* home section */
 #home .button {
   font-size: 14px;
 }
@@ -349,9 +349,16 @@ svg:hover path {
   width: 600px;
   margin: 0 auto;
 }
+span.line {
+  width: 300px;
+  height: 1px;
+  display: block;
+  background-color: #233554;
+}
 section {
   margin-bottom: 100px;
 }
+/* education section */
 .education {
   margin-top: 100px;
 }
@@ -464,7 +471,7 @@ h3 span {
   display: flex !important;
 }
 .profil-picture {
-  margin: 20px 0 0 109px;
+  margin: 20px 39px 0 109px;
 }
 #about .align-start {
   margin-top: 19px;
@@ -652,20 +659,6 @@ form {
   background: transparent none repeat scroll 0% 0%;
   filter: none;
 }
-.test::after {
-  border: 2px solid #64ffda;
-  top: 20px;
-  left: 20px;
-  z-index: -1;
-  content: '';
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-.test {
-  position: relative;
-}
 .background-blue {
   width: 580px;
   height: 360px;
@@ -686,18 +679,28 @@ form {
   background: transparent none repeat scroll 0% 0%;
   filter: none;
 }
-.test::after {
-  border: 2px solid #64ffda;
-  top: 20px;
-  left: 20px;
-  z-index: -1;
+
+.profil-picture > div::after {
+  border: 3px solid #64ffda;
+  width: 300px;
+  height: 300px;
   content: '';
-  display: block;
   position: absolute;
-  width: 100%;
-  height: 100%;
+  display: block;
+  left: 8%;
+  top: 8%;
+  z-index: -5;
+  border-radius: 11px;
+  transition: 300ms;
 }
-.test {
+.profil-picture > div {
+  height: 300px;
+}
+.profil-picture > div:hover::after {
+  left: 1%;
+  top: 1%;
+}
+.profil-picture > div {
   position: relative;
 }
 .left .img-project {
@@ -767,6 +770,8 @@ h1 span {
 .glider-prev {
   display: none !important;
 }
+
+/* start responsive */
 @media screen and (max-width: 1790px) {
   header {
     width: calc(100% - 30px);
@@ -831,7 +836,7 @@ h1 span {
 }
 @media screen and (max-width: 930px) {
   .small-container {
-    width: calc(100% - 30px);
+    width: 100%;
   }
 }
 @media screen and (min-width: 900px) {
@@ -861,6 +866,7 @@ h1 span {
     top: 0;
     background-color: black;
     justify-content: center;
+    z-index: 15;
   }
   .display-nav .d-flex li {
     margin: 0 0 48px 0;
@@ -915,10 +921,21 @@ h1 span {
   .profil-picture {
     margin: 20px auto 109px auto;
   }
+  .education .align-start > .d-flex {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .education .align-start .d-flex .education-choice {
+    border: 2px solid #233554 !important;
+  }
+  .education .align-start .d-flex .active-education {
+    border: 2px solid #64ffda !important;
+  }
 }
 @media screen and (max-width: 730px) {
   .thin-container {
-    width: calc(100% - 30px);
+    width: 100%;
   }
   .bloc {
     flex-direction: column;
@@ -931,6 +948,28 @@ h1 span {
   .job,
   .compagny {
     padding-left: 0;
+  }
+}
+@media screen and (max-width: 635px) {
+  .glider-track {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    z-index: 1;
+    flex-wrap: wrap;
+    width: initial !important;
+    justify-content: space-between;
+    row-gap: 30px;
+  }
+  .glider-dots {
+    display: none !important;
+  }
+  .card:nth-child(2n) {
+    margin: 0;
+  }
+  .glider-slide {
+    width: 284px !important;
   }
 }
 @media screen and (max-width: 620px) {
@@ -947,6 +986,9 @@ h1 span {
 @media screen and (max-width: 600px) {
   .extra-small-container {
     width: calc(100% - 30px);
+  }
+  .card {
+    width: 100% !important;
   }
 }
 @media screen and (max-width: 497px) {
