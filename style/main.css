@@ -522,6 +522,9 @@ h3 span {
   padding-left: 12px;
   display: none;
 }
+.compagny .align-start {
+  margin-bottom: 12px;
+}
 .job h4,
 .compagny h4 {
   font-size: 22px;
@@ -536,15 +539,14 @@ h3 span {
 .job p,
 .compagny p {
   font-size: 18px;
-  padding-top: 6px;
+  padding-top: 2px;
   padding-left: 12px;
   color: #8892b0;
-  margin-bottom: 12px !important;
+  line-height: 130%;
 }
 .job p:last-child,
 .compagny p:last-child {
   margin-bottom: 0;
-  padding-top: 0;
 }
 #contact h3 {
   font-size: 16px;
